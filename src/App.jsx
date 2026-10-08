@@ -19,8 +19,8 @@ import Features from "./pages/platform/home/features";
 import Sketch from "./pages/platform/home/howToWork";
 import Terms from "./pages/platform/home/terms";
 import Complaints from "./pages/platform/home/complaints";
-import StoreBuilder from "./builder/StoreBuilder";
-import StoreBuilderPage from "./builder/StoreBuilder";
+import WebsiteBuilder from "./website-builder/builder/WebsiteBuilder";
+
 
 function App() {
   const host = window.location.hostname;
@@ -48,11 +48,9 @@ function App() {
             <Route path="/terms" element={<Terms />} />
 
             <Route path="/complaints" element={<Complaints />} />
-          <Route path="/website" element={<StoreBuilderPage slug="ahmed" />} />
 
 
-
-
+<Route path="/builder/:slug" element={<WebsiteBuilder />} />
 
 
 

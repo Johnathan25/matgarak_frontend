@@ -1,0 +1,293 @@
+// website-builder/templates/template5/index.js
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import Products from "./Products";
+import Services from "./Services";
+import Reviews from "./Reviews";
+import CTA from "./CTA";
+import Footer from "./Footer";
+
+export const template9 = {
+  id: 9,
+  name: "Automize",
+  description: "ورشة سيارات بخدمات احترافية بتصميم أحمر وأسود",
+  preview: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800",
+
+  theme: {
+    primaryColor: "#1A1A1A",
+    secondaryColor: "#E63946",
+    accentColor: "#E63946",
+    backgroundColor: "#ffffff",
+    surfaceColor: "#F5F5F5",
+    textPrimaryColor: "#1A1A1A",
+    textSecondaryColor: "#6B6B6B",
+    fontFamily: "'Cairo', Arial, sans-serif",
+    radius: "8px",
+    shadow: "soft",
+  },
+
+  components: {
+    navbar: Navbar,
+    hero: Hero,
+    products: Products,
+    services: Services,
+    reviews: Reviews,
+    cta: CTA,
+    footer: Footer,
+  },
+
+  sections: [
+    {
+      id: "navbar-5",
+      type: "navbar",
+      order: 0,
+      visible: true,
+      content: {
+        title: "Automize",
+        logo: { url: "", publicId: "" },
+        links: [
+          { label: "الرئيسية", href: "/" },
+          { label: "الفئات", href: "/categories" },
+          { label: "المنتجات", href: "/products" },
+          { label: "صفحات أخرى", href: "/pages" },
+          { label: "المدونة", href: "/blog" },
+        ],
+        phone: "+20 123 456 7890",
+        showSearch: true,
+        showUser: true,
+        showWishlist: true,
+        showCart: true,
+        cartCount: 2,
+        wishlistCount: 1,
+      },
+      style: {},
+    },
+    {
+      id: "hero-5",
+      type: "hero",
+      order: 1,
+      visible: true,
+      content: {
+        badge: "خدمات دهان السيارات",
+        title: "خدمات إصلاح ودهان هيكل السيارة",
+        subtitle: "خدمات إصلاح ودهان هيكل السيارة من أكثر الأشياء التي يلاحظها الناس — خاصةً إذا كان الدهان متقشراً أو مخدوشاً أو تالفاً.",
+        buttonText: "اعرف المزيد",
+        buttonLink: "/services",
+        backgroundImage: {
+          url: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600",
+          publicId: "",
+        },
+        mechanicImage: {
+          url: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800",
+          publicId: "",
+        },
+        features: [
+          { id: "f1", icon: "🛞", label: "إطارات وعجلات" },
+          { id: "f2", icon: "⚙️", label: "نظام الفرامل" },
+          { id: "f3", icon: "🔧", label: "ممتص الصدمات" },
+          { id: "f4", icon: "💡", label: "المصابيح الأمامية" },
+          { id: "f5", icon: "🔊", label: "النظام الصوتي" },
+          { id: "f6", icon: "❄️", label: "مكيف السيارة" },
+        ],
+      },
+      style: {},
+    },
+    {
+      id: "products-5",
+      type: "products",
+      order: 2,
+      visible: true,
+      content: {
+        title: "خدماتنا",
+        subtitle: "OUR SERVICES",
+        columns: 4,
+        showPrice: true,
+        showRating: true,
+        showAddToCart: false,
+        items: [
+          {
+            id: "c1",
+            name: "محرك كامل",
+            price: 2500,
+            currency: "ج.م",
+            rating: 4.8,
+            badge: "الأكثر مبيعاً",
+            image: {
+              url: "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=500",
+              publicId: "",
+            },
+          },
+          {
+            id: "c2",
+            name: "فرامل احترافية",
+            price: 850,
+            currency: "ج.م",
+            rating: 4.7,
+            image: {
+              url: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=500",
+              publicId: "",
+            },
+          },
+          {
+            id: "c3",
+            name: "تغيير زيت",
+            price: 350,
+            oldPrice: 450,
+            currency: "ج.م",
+            rating: 4.9,
+            badge: "خصم",
+            image: {
+              url: "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=500",
+              publicId: "",
+            },
+          },
+          {
+            id: "c4",
+            name: "تكييف سيارة",
+            price: 650,
+            currency: "ج.م",
+            rating: 4.6,
+            image: {
+              url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500",
+              publicId: "",
+            },
+          },
+        ],
+      },
+      style: {},
+    },
+    {
+      id: "services-5",
+      type: "services",
+      order: 3,
+      visible: true,
+      content: {
+        title: "أفضل ميكانيكيين محترفين ستقابلهم",
+        subtitle: "The Most Experienced Mechanics You Ever Met",
+        description: "نحن في Automize نقدم لك أفضل خدمات صيانة وإصلاح السيارات بأحدث المعدات وعلى يد أفضل الميكانيكيين المحترفين. خبرة سنوات طويلة في مجال صيانة السيارات.",
+        image: {
+          url: "https://images.unsplash.com/photo-1632823469850-1b7b1e8b7e1e?w=800",
+          publicId: "",
+        },
+        features: [
+          { id: "f1", title: "جودة عالية", description: "ضمان على كل الخدمات" },
+          { id: "f2", title: "ميكانيكيون خبراء", description: "أكثر من 10 سنوات خبرة" },
+          { id: "f3", title: "خدمات شاملة", description: "كل ما تحتاجه في مكان واحد" },
+        ],
+        buttonText: "اعرف المزيد",
+        buttonLink: "/about",
+      },
+      style: {},
+    },
+    {
+      id: "reviews-5",
+      type: "reviews",
+      order: 4,
+      visible: true,
+      content: {
+        title: "خطط العناية بالسيارة",
+        subtitle: "CHOOSE YOUR PLAN",
+        columns: 4,
+        items: [
+          {
+            id: "p1",
+            name: "الباقة الأساسية",
+            role: "BASIC",
+            price: 150,
+            currency: "ج.م/شهر",
+            rating: 5,
+            text: "تغيير زيت + فلتر هواء",
+            features: ["تغيير زيت", "فلتر هواء", "فحص مجاني"],
+          },
+          {
+            id: "p2",
+            name: "الباقة القياسية",
+            role: "STANDARD",
+            price: 250,
+            currency: "ج.م/شهر",
+            rating: 5,
+            badge: "الأكثر شيوعاً",
+            text: "الباقة الأساسية + فحص شامل",
+            features: ["تغيير زيت", "فلتر هواء", "فحص فرامل", "فحص مكيف"],
+          },
+          {
+            id: "p3",
+            name: "الباقة المميزة",
+            role: "PREMIUM",
+            price: 400,
+            currency: "ج.م/شهر",
+            rating: 5,
+            text: "الباقة القياسية + عناية كاملة",
+            features: ["كل ما في القياسية", "غسيل مجاني", "تلميع", "فرش زيت"],
+          },
+          {
+            id: "p4",
+            name: "الباقة الاحترافية",
+            role: "PRO",
+            price: 600,
+            currency: "ج.م/شهر",
+            rating: 5,
+            badge: "الاحترافية",
+            text: "الباقة المميزة + صيانة شاملة",
+            features: ["كل ما في المميزة", "معاينة أسبوعية", "خدمة طوارئ 24/7"],
+          },
+        ],
+      },
+      style: {},
+    },
+    {
+      id: "cta-5",
+      type: "cta",
+      order: 5,
+      visible: true,
+      content: {
+        title: "هل تحتاج صيانة سيارتك؟",
+        subtitle: "احجز موعدك الآن واحصل على خصم 15%",
+        buttonText: "احجز الآن",
+        buttonLink: "/booking",
+        backgroundImage: {
+          url: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1600",
+          publicId: "",
+        },
+      },
+      style: {},
+    },
+    {
+      id: "footer-5",
+      type: "footer",
+      order: 6,
+      visible: true,
+      content: {
+        title: "Automize",
+        description: "ورشة سيارات متخصصة في الصيانة والإصلاح بأحدث المعدات",
+        logo: { url: "", publicId: "" },
+        phone: "+20 123 456 7890",
+        email: "info@automize.com",
+        address: "القاهرة، مصر",
+        copyright: "© 2026 Automize — جميع الحقوق محفوظة",
+        social: { facebook: "#", instagram: "#", twitter: "#", whatsapp: "#" },
+        brands: ["CHEVROLET", "FERRARI", "HONDA", "LAND ROVER", "LEXUS", "PORSCHE"],
+        columns: [
+          {
+            title: "روابط سريعة",
+            links: [
+              { label: "من نحن", href: "/about" },
+              { label: "خدماتنا", href: "/services" },
+              { label: "المدونة", href: "/blog" },
+              { label: "تواصل", href: "/contact" },
+            ],
+          },
+          {
+            title: "المساعدة",
+            links: [
+              { label: "الأسئلة الشائعة", href: "/faq" },
+              { label: "الشروط", href: "/terms" },
+              { label: "سياسة الخصوصية", href: "/privacy" },
+            ],
+          },
+        ],
+      },
+      style: {},
+    },
+  ],
+};

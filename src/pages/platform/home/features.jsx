@@ -22,80 +22,80 @@ export default function Features() {
   // الركائز الثلاث الأساسية
   const corePillars = [
     {
-      title: "إطلاق فوري وسرعة استثنائية",
-      description: "متجرك جاهز للعمل والبيع في أقل من دقيقتين دون انتظار أو الحاجة لأي مبرمج أو خبرة تقنية.",
+      title: "متجرك جاهز في دقيقتين",
+      description: "مش هتحتاج مبرمج ولا خبرة.. سجل واعرض بضاعتك وابدأ بيع فوراً من غير أي تأخير.",
       icon: Zap,
-      badge: "جاهز في دقائق",
+      badge: "جاهز في دقايق",
     },
     {
-      title: "أعلى معايير الجودة السحابية",
-      description: "بنية تحتية سريعة جداً وتصميم متجاوب 100% مع الهواتف والحواسب لضمان تجربة شراء سلسة وممتعة.",
+      title: "سريع وخفيف على الموبايل",
+      description: "الموقع بيفتح في ثانية مع زبونك، سلس وسريع ومظبوط على كل أنواع الشاشات والموبايلات.",
       icon: Cpu,
-      badge: "أداء 99.9%",
+      badge: "شغال ٢٤/٧ بدون تهنيج",
     },
     {
-      title: "أسعار بسيطة و 0% عمولة",
-      description: "اشتراك شهري واضح دون أي مصاريف خفية، مع احتفاظك بكامل أرباح مبيعاتك دون أي اقتطاع.",
+      title: "اشتراك واضح و 0% عمولة",
+      description: "اشتراك شهري محدد وبس، ومفيش أي مصاريف مستخبية.. كل قرش يدخل من مبيعاتك بتاعك لوحدك.",
       icon: BadgePercent,
-      badge: "أرباحك كاملة لك",
+      badge: "كل أرباحك في جيبك",
     },
   ];
 
   // المزايا المقترحة والمفصلة للمنصة
   const featureList = [
     {
-      title: "نطاق فرعي مخصص واستقلالية تامة",
-      description: "يحصل كل تاجر فور التسجيل على رابط مستقل (store.mdkark.com) مع إمكانية ربط نطاقك الخاص لاحقاً.",
+      title: "رابط خاص باسمك وعلامتك",
+      description: "أول ما بتشترك بيطلعلك رابط مباشر باسم متجرك، وتقدر تربط دومينك الخاص براحتك في أي وقت.",
       icon: Globe,
-      tag: "الهوية والاستقلالية",
+      tag: "اسمك وهيبتك",
     },
     {
-      title: "محرر مظهر حي وتخصيص مرئي (Theme Customizer)",
-      description: "تحكم كامل وفوري في ألوان المتجر، الخطوط، شكل البطاقات، تدوير الحواف، والظلال ليعكس هوية علامتك بدقة.",
+      title: "صمم متجرك على مزاجك",
+      description: "تحكم بسهولة في الألوان، اللوجو، الخطوط، وشكل المنتجات عشان تليق بشغل البراند بتاعك.",
       icon: Sliders,
-      tag: "التصميم والتخصيص",
+      tag: "الشكل والألوان",
     },
     {
-      title: "عزل كامل وآمن لقواعد البيانات (Data Isolation)",
-      description: "بيانات متجرك، منتجاتك، وفواتير عملائك معزولة ومحمية بالكامل ولا يمكن لأي متجر آخر الوصول إليها.",
+      title: "بياناتك ومبيعاتك في سرية تامة",
+      description: "حسابك مقفول ومحمي تماماً، ومفيش أي تاجر تاني يقدر يشوف أرقامك ولا تفاصيل زباينك.",
       icon: Database,
       tag: "الأمان والخصوصية",
     },
     {
-      title: "تكامل سلس مع بوابات الدفع الإلكتروني",
-      description: "دعم مدمج للدفع عبر البطاقات البنكية (Visa & Mastercard)، المحافظ الإلكترونية، ونظام الدفع عند الاستلام.",
+      title: "طرق دفع مريحة لكل الزباين",
+      description: "الزبون يدفع فيزا، محافظ كاش، أو حتى يختار الدفع وقت الاستلام.. اللي يريحه ويريّحك.",
       icon: CreditCard,
-      tag: "المدفوعات",
+      tag: "الدفع والتحصيل",
     },
     {
-      title: "إدارة المخزون والتنبيه التلقائي للنفاذ",
-      description: "متابعة دقيقة لكميات المنتجات وتنوعاتها (المقاسات والألوان) مع إشعارات فورية عند اقتراب نفاذ أي صنف.",
+      title: "تنبيه أول ما بضاعتك تقرب تخلص",
+      description: "متابعة مستمرة للمقاسات والألوان المتبقية، ورسالة تنبيه عشان تلحق تزوّد المخزون قبل ما ينفد.",
       icon: BellRing,
-      tag: "إدارة المنتجات",
+      tag: "إدارة المخزن",
     },
     {
-      title: "ربط شركات الشحن وحساب التكلفة",
-      description: "تحديد أسعار الشحن بحسب المحافظة أو المدينة مع إمكانية تصدير بوالص الشحن وتتبع حالة التوصيل بسهولة.",
+      title: "حساب مصاريف الشحن والمحافظات",
+      description: "حدد سعر الشحن لكل محافظة بضغطة زر، وجهز بوالص الشحن وتابع التوصيل خطوة بخطوة.",
       icon: Truck,
-      tag: "اللوجستيات",
+      tag: "الشحن والتوصيل",
     },
     {
-      title: "تقارير بيع ذكية ورؤى تحليليّة (Analytics)",
-      description: "لوحة مؤشرات توضح صافي المبيعات، الطلبات المكتملة، والمنتجات الأكثر طلباً لاتخاذ قرارات تجارية سليمة.",
+      title: "حسابات وتقارير تفهمك بيزنسك",
+      description: "شاشة بسيطة بتعرفك كسبت كام، المنتجات الأكثر طلباً إيه، والطلبات اللي اتسلمت بنجاح.",
       icon: BarChart3,
-      tag: "الإحصائيات والنمو",
+      tag: "الأرقام والأرباح",
     },
     {
-      title: "تجربة تسوق مثالية عبر الموبايل (Mobile First)",
-      description: "واجهات شراء فائقة السرعة مصممة خصيصاً لمستخدمي الهواتف الذكية مع خطوات دفع سريعة ترفع نسبة المبيعات.",
+      title: "شراء سهل وسريع من الموبايل",
+      description: "صفحة طلب مريحة ومختصرة عشان الزبون يطلب على طول من غير لف ودوران ولا تضييع وقت.",
       icon: Smartphone,
-      tag: "تجربة المستخدم",
+      tag: "سهولة الشراء",
     },
     {
-      title: "شهادة أمان وتشفير SSL مجانية",
-      description: "حماية فورية لجميع المعاملات والبيانات الحساسة عبر بروتوكولات تشفير بنكية متقدمة دون أي تكلفة إضافية.",
+      title: "حماية وتشفير مجاني للمتجر",
+      description: "متجرك محمي بأعلى درجات الأمان وشهادات التشفير البنكية من غير ما تدفع مليم إضافي.",
       icon: ShieldCheck,
-      tag: "الحماية السحابية",
+      tag: "أمان المتجر",
     },
   ];
 
@@ -108,19 +108,20 @@ export default function Features() {
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fadeIn">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg bg-accent/40 border border-accent text-dark text-xs font-bold mb-6">
-            <span>بنيت لخدمة نجاحك التجاري</span>
+
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-md bg-accent/40 border border-accent text-dark text-xs font-bold mb-6">
+            <span>كل اللي تحتاجه عشان تجارتك تكبر</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl font-light text-gray-900 tracking-tight mb-4">
-            <span className="font-bold text-dark">
-            مميزات مصممة لتطلق متجرك <br />
-
-            بسرعة فائقة وبأعلى جودة</span>
-          </h1>
+          <h1 className="text-3xl sm:text-5xl font-bold text-dark tracking-tight leading-snug sm:leading-normal mb-6">
+  <span className="block mb-2">مميزات معمولالك مخصوص</span>
+  <span className="block font-medium text-gray-700 text-2xl sm:text-4xl">
+    عشان تفتح متجرك وتبيع من أول يوم
+  </span>
+</h1>
 
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed font-normal">
-            جمعنا لك كل الأدوات التي تحتاجها للبيع والتوسع، في منصة واحدة باشتراك مرن وبدون تعقيدات تقنية.
+            جمعنالك كل الأدوات اللي بتسهل البيع وإدارة الطلبات في مكان واحد، باشتراك واضح ومن غير وجع دماغ تقني.
           </p>
         </div>
       </section>
@@ -207,6 +208,7 @@ export default function Features() {
               <h5 className="text-sm font-bold text-dark">{feature.title}</h5>
               <p className="text-xs text-gray-500 mt-0.5 line-clamp-2">{feature.description}</p>
             </div>
+
           </div>
         );
       })}
@@ -217,27 +219,31 @@ export default function Features() {
       </section>
 
       {/* قسم الدعوة للبدء (CTA) */}
-      <section className="py-20 bg-ligth/20 border-t border-accent/40 text-center">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-light text-gray-900 mb-4">
-            امتلك كل هذه المميزات <span className="font-bold text-dark">بأقل تكلفة اليوم</span>
+      <section className="py-20 bg-dark border-t border-accent/40 text-center">
+          <div className="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-5xl font-light text-gray-900 mb-4 text-white">
+               <span className="font-semibold text-white">
+             كل الإمكانيات دي بين إيديك  
+            </span>
+            <span> </span>
+            <span className="font-bold text-brown">بأبسط تكلفة</span>
           </h2>
-          <p className="text-sm sm:text-base text-gray-600 mb-8 font-normal">
-            ابدأ تجربتك المجانية لمدة 14 يوماً واستمتع بمتجر مستقل متكامل ومخصص لهويتك بالكامل.
+          <p className="text-sm sm:text-base text-white mb-8 font-normal">
+            جرب بنفسك مجاناً لمدة ١٤ يوماً وشوف متجرك شغال ومكتمل باسمك وشعارك.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               to="/register"
-              className="px-8 py-3.5 bg-dark text-white rounded-xl hover:bg-dark/90 transition-all font-semibold text-sm shadow-md flex items-center gap-2 group"
+              className="px-8 py-3.5 bg-brown text-white rounded-xl hover:bg-dark/90 transition-all font-semibold text-sm shadow-md flex items-center gap-2 group"
             >
-              <span>أنشئ متجرك مجاناً</span>
+              <span >افتح متجرك وجربه مجاناً</span>
               <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/plans"
               className="px-8 py-3.5 border border-brown/40 text-dark bg-white rounded-xl hover:bg-ligth/20 transition-all font-semibold text-sm"
             >
-              استعراض خطط الأسعار
+              شوف خطط الأسعار
             </Link>
           </div>
         </div>

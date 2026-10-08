@@ -8,7 +8,7 @@ import {
   Sparkles 
 } from "lucide-react"
 
-export default function Navbar({ platformName = "منصة المتاجر" }) {
+export default function Navbar({ platformName = "منصة متجرك" }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -49,12 +49,12 @@ export default function Navbar({ platformName = "منصة المتاجر" }) {
               <span className="text-lg font-bold text-dark tracking-tight leading-tight">
                 {platformName}
               </span>
-              <span className="text-[10px] text-brown font-medium">سحابي متكامل</span>
+              <span className="text-[10px] text-brown font-medium"> متجرك في امان</span>
             </div>
           </Link>
 
           {/* Desktop Menu - الروابط للشاشات الكبيرة */}
-          <div className="hidden md:flex md:items-center gap-8">
+          <div className="hidden lg:flex md:items-center gap-8">
             {navLinks.map((item) => (
               <Link
                 key={item.name}
@@ -67,7 +67,7 @@ export default function Navbar({ platformName = "منصة المتاجر" }) {
           </div>
 
           {/* Desktop Buttons - أزرار الدخول والتسجيل */}
-          <div className="hidden md:flex md:items-center gap-3">
+          <div className="hidden lg:flex lg:items-center gap-3">
             <Link
               to="/login"
               className="px-4 py-2 text-sm font-semibold text-dark hover:text-brown border border-transparent hover:border-accent rounded-lg transition-colors inline-flex items-center gap-1.5"
@@ -87,7 +87,7 @@ export default function Navbar({ platformName = "منصة المتاجر" }) {
           {/* Mobile Menu Button - زر القائمة للموبايل */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-ligth/30 border border-accent hover:bg-ligth/60 transition-colors"
+            className="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-ligth/30 border border-accent hover:bg-ligth/60 transition-colors"
             aria-label="القائمة الرئيسية"
           >
             {isOpen ? (
@@ -101,7 +101,7 @@ export default function Navbar({ platformName = "منصة المتاجر" }) {
 
       {/* Mobile Dropdown Menu */}
       <div 
-        className={`md:hidden transition-all duration-300 overflow-hidden ${
+        className={`lg:hidden transition-all duration-300 overflow-hidden ${
           isOpen ? "max-h-[450px] opacity-100 border-b border-accent/60 shadow-lg" : "max-h-0 opacity-0"
         } bg-white`}
       >
